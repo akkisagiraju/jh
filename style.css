@@ -91,6 +91,100 @@ li.dropdown:focus {
   padding-left: 24px;
 }
 
+.modal-content {
+  max-width: 450px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+.modal-header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  padding: 0 36px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.modal-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.modal-header-info h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.modal-header-info p {
+  text-align: center;
+  color: #6c666f;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.modal-body {
+  max-width: 400px;
+  width: 100%;
+  padding: 0 36px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.modal-body .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.modal-body .input-group label {
+  font-size: 12px;
+}
+
+.modal-body span {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+  margin-top: 18px;
+}
+
+.modal-body span a {
+  color: #338CCD;
+  text-decoration: underline;
+}
+
+.modal-body button {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;  
+}
+
+.modal-body p {
+  color: #6C666F;
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.modal-body p a {
+  text-transform: uppercase;
+  color: #338CCD;
+  font-weight: 500;  
+}
+
 /* hero section */
 
 .hero-section {
