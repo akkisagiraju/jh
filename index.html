@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -18,11 +18,13 @@
     <nav class="navbar navbar-default">
       <div class="custom-container">
         <div class="navbar-header">
+          <img class="mobile-menu" src="/assets/icons/menu.svg" />
           <a class="navbar-brand" href="#">
             <img class="navbar-logo" alt="Brand" src="./assets/jh_logo.png" />
           </a>
+          <button class="mobile-login" data-toggle="modal" data-target="#signUpModal">Join/Login</button>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">About</a></li>
             <li class="dropdown">
@@ -49,6 +51,23 @@
               </button>
             </li>
           </ul>
+        </div>
+
+        <div id="side-nav" class="side-nav">
+          <div class="side-nav__header">
+            <img class="side-nav__brand" src="/assets/jh_logo.png" alt="" />
+            <a href="javascript:void(0)" class="closebtn">&times;</a>
+          </div>
+
+          <a href="#"><img src="/assets/icons/login.svg" alt="" /> Join / Login</a>
+          <a href="#"><img src="/assets/icons/home.svg" alt="" /> Home</a>
+          <a href="#"><img src="/assets/icons/about.svg" alt="" /> About</a>
+          <a href="#"><img src="/assets/icons/explore.svg" alt="" /> Explore Data</a>
+          <a href="#"><img src="/assets/icons/contribute.svg" alt="" /> Contribute Data</a>
+          <a href="#"><img src="/assets/icons/resources.svg" alt="" /> Resources</a>
+          <a href="#"><img src="/assets/icons/blog.svg" alt="" /> Blog</a>
+          <a href="#"><img src="/assets/icons/contact.svg" alt="" /> Contact</a>
+          <a href="#"><img src="/assets/icons/terms.svg" alt="" /> Terms of Service</a>
         </div>
       </div>
       <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModal">
@@ -131,9 +150,9 @@
                   An open source platform for data related to the Indian law and judicial system. Crowdsourced from a
                   community of law enthusiasts, legal experts & researchers.
                 </p>
-                <div class="row">
-                  <button class="btn btn-primary col-lg-5">Explore Data</button>
-                  <button class="btn btn-primary-outline col-lg-5">Contribute Data</button>
+                <div class="explore-row">
+                  <a href="#" class="btn btn-primary col-lg-5 col-xs-12">Explore Data</a>
+                  <a href="#" class="btn btn-primary-outline col-lg-5 col-xs-12">Contribute Data</a>
                 </div>
               </div>
             </div>
@@ -147,11 +166,13 @@
       <section class="datasets-section">
         <div class="custom-container">
           <div class="main-search">
-            <p>Search for datasets, reports, organizations, categories & more</p>
+            <p>Search for <span>datasets, reports, organizations, categories & more</span></p>
             <div class="input-group">
               <input type="text" class="form-control" />
               <span class="input-group-btn">
-                <button class="btn btn-primary" type="button">Go!</button>
+                <button class="btn btn-primary" type="button">
+                  <img src="/assets/icons/search.svg" style="height: 20px; width: auto" alt="" />
+                </button>
               </span>
             </div>
           </div>
@@ -170,6 +191,14 @@
                 You can find datasets as well as stand-alone files on the platform. For more info on what truly makes a
                 dataset, click the links below.
               </p>
+              <div class="row dataset-action-row">
+                <div class="col-lg-5 col-sm-6 col-xs-6">
+                  <a href="#"><img src="/assets/icons/movie_icon.svg" /><span>Watch Video</span></a>
+                </div>
+                <div class="col-lg-5 col-sm-6 col-xs-6">
+                  <a href="#"><img src="/assets/icons/book_icon.svg" /><span>Read more</span></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -221,7 +250,7 @@
           <h3>Top Data Contributors in the Community</h3>
           <div class="contributors-row row"></div>
           <p>Want to see your name here? We’re looking for contributors!</p>
-          <button class="btn btn-primary">Contribute Data</button>
+          <a class="btn btn-primary">Contribute Data</a>
         </div>
       </section>
 
@@ -252,13 +281,13 @@
             <div class="subscribe col-lg-5 col-md-5">
               <div class="footer__branding">
                 <img class="footer__branding__jh" src="/assets/jh_logo_white.png" alt="JusticeHub Logo White" />
-                <div class="footer__branding_social">
+                <a href="#" class="footer__branding_social">
                   <img src="/assets/icons/twitter.svg" alt="" />
-                </div>
-                <div class="footer__branding_social">
+                </a>
+                <a href="#" class="footer__branding_social">
                   <img src="/assets/icons/facebook.svg" alt="" />
-                </div>
-                <div class="footer__branding_social">in</div>
+                </a>
+                <a href="#" class="footer__branding_social">in</a>
               </div>
               <p><strong>Subscribe to our mailing list</strong></p>
               <p>Get informed of the latest legal and justice data that make it to our platform. Enter your email:</p>
