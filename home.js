@@ -27,7 +27,14 @@
     `;
   }
 
-  categories.forEach((category) => (categoriesRow.innerHTML += categoryTemplate(category)));
+  categories.forEach((category, index) => {
+    if ((index + 1) % 6 === 0) {
+      categoriesRow.innerHTML =
+        categoriesRow.innerHTML + categoryTemplate(category) + `<div class="clearfix visible-xs-block"></div>`;
+    } else {
+      categoriesRow.innerHTML += categoryTemplate(category);
+    }
+  });
 
   // Code for adding contributors to the homepage
 
@@ -92,5 +99,4 @@
     $('#signUpModal').removeClass('fade').modal('hide');
     $('#forgotPasswordModal').addClass('fade').modal('show');
   });
-
 })();
