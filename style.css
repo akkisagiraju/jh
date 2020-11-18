@@ -676,6 +676,18 @@ footer h3 {
 }
 
 @media (max-width: 990px) {
+  .category-item {
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .category-item p {
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: center;
+  }
+
   .datasets-section__content {
     text-align: center;
   }
@@ -703,7 +715,7 @@ footer h3 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body {
     font-size: 14px;
   }
@@ -784,12 +796,6 @@ footer h3 {
     padding-right: 45px;
   }
 
-  .category-item {
-    flex-direction: column;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
   .category-item .icon-container {
     height: 50px;
     width: 50px;
@@ -802,9 +808,6 @@ footer h3 {
 
   .category-item p {
     font-size: 12px;
-    margin-left: 0;
-    margin-top: 10px;
-    text-align: center;
   }
 
   .main-search {
